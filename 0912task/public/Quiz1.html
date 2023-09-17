@@ -5,19 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 <style>
-
-
-    #Box{
+    #Box {
         background-color: white;
     }
+
     .title {
         font-size: 2.5em;
         margin-left: 10px;
@@ -25,24 +17,26 @@
         text-align: left;
     }
 
-    table td {
+    td {
+        padding: 10px;
         text-align: center;
-        width: 40px;
+        /*가로 세로 40px*/
+        width: 40px; 
         height: 40px;
-        padding: 20px;
     }
-    table td:hover{
-        background-color: lightgoldenrodyellow;
-        cursor: pointer;
+
+    table td:hover {
+        background-color: lightgoldenrodyellow; /*배경색 노랑*/
+        cursor: pointer; /*마우스 포인터*/
     }
 
     table {
         border-collapse: collapse;
         border-spacing: 10px;
-        width: 1200px;
-        height: 800px;
-        margin: 20px;
-        box-shadow: 5px 5px 5px 5px lightgray;
+        margin: 20px;         /* 외부 여백 20px */
+        box-shadow: 5px 5px 5px 5px lightgray; /* 그림자 */
+        text-align: center;
+
     }
 
     .time {
@@ -52,153 +46,81 @@
         padding: 3.5px;
         line-height: 150px;
     }
-    .width_fix{
-        width: 80px;
-    }
+
     * {
         margin: 0 auto;
         padding: 0;
+        text-align: center;
+
     }
 </style>
 
 <body>
-    <h1 class="title">시간표&nbsp;-&nbsp;202012164&nbsp;이윤아</h1>
-    <div id="Box">
-        <table border="1">
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            #Box {
+                background-color: white;
+            }
+
+            td {
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid black;
+            }
+
+            table td:hover {
+                background-color: lightgoldenrodyellow;
+                cursor: pointer;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 10px;
+                margin: 20px;
+                /* 외부 여백 20px */
+                box-shadow: 5px 5px 5px 5px lightgray;
+                text-align: center;
+            }
+
+            .time {
+                width: 50px;
+                vertical-align: top;
+                margin: 0;
+                padding: 3.5px;
+                line-height: 150px;
+            }
+
+            * {
+                margin: 0 auto;
+                padding: 0;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <table>
             <tr>
-                <th></th>
-                <th>월</th>
-                <th>화</th>
-                <th>수</th>
-                <th>목</th>
-                <th>금</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
             </tr>
             <tr>
-                <td class="time" rowspan="2">9시</td>
-                <td bgcolor="#AAC9CE" rowspan="6">통계자료 분석 및 실습<br>M401<br>09:00~11:50</td>
-                <td bgcolor="#E2B3A3" rowspan="6">자료구조<br>6206<br>09:00~11:50</td>
-                <td></td>
-                <td class="width_fix"></td>
-                <td></td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="time" rowspan="2">10시</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="time" rowspan="2">11시</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">12시</td>
-                <td bgcolor="#C9BBC8" td rowspan="3">네트워크 프로그래밍<br>6202<br>12:00~13:15</td>
-                <td></td>
-                <td bgcolor="#C9BBC8" td rowspan="3">네트워크 프로그래밍<br>6202<br>12:00~13:15</td>
-                <td></td>
-                <td bgcolor="E5C1CD" td rowspan="6">시스템 분석 및 설계<br>6201<br>12:00~14:50</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">1시</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">2시</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">3시</td>
-                <td></td>
-                <td></td>
-                <td bgcolor="F3DBCF" td rowspan="6">사회복지 융복합 혁신랩<br>7417<br>15:00~17:50</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">4시</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">5시</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2" class="time">6시</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td style="color: red;">얍</td>
+                <td>7</td>
+                <td>8</td>
+                <td style="color: red;">9</td> <!--색: 빨강-->
             </tr>
         </table>
-</body>
+    </body>
 
-</html>
+    </html>
